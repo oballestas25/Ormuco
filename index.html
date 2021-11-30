@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ormuco Test</title>
+</head>
+<body>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+         <li>
+           <label>Server Name:</label>
+           <input type="text" id="server_name" name="server_name">
+         </li>
+         <li>
+           <label>Image:</label>
+           <input type="text" id="image" name="image">
+         </li>
+         <li>
+            <label>Flavor:</label>
+            <input type="text" id="flavor" name="flavor">
+         </li>
+         <li>
+            <label>Key name:</label>
+            <input type="text" id="key_name" name="key_name">
+         </li>
+        </ul>
+       </form>
+     <li class="button">
+        <button type="submit">Send</button>
+    </li>
+
+    <script> 
+        var theUrl='http://localhost:5000/create_instances';
+        function list_servers(theUrl) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+            xmlHttp.send( null );
+            console.log (xmlHttp.responseText);
+        }
+    list_servers(theUrl);
+    
+     </script>
+
+</body>
+
+
+</html>
