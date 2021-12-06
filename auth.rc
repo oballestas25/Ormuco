@@ -1,0 +1,8 @@
+export OS_USERNAME=utb@ormuco.com
+export OS_PASSWORD=ILOVEUTB2021
+export OS_TENANT_ID=2ee7b627f154414f83ffdbbf6c78999f
+export OS_AUTH_URL=https://api-acloud.ormuco.com:5000/v3
+export OS_AUTH_TYPE=password
+export OS_IDENTITY_API_VERSION=3
+
+
